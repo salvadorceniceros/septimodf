@@ -37,6 +37,14 @@ header{
         background-color: $color-principal;
         border-color: $color-principal;
     }
+    .btn-warning{
+        background-color: $color-principal;
+        color: white;
+    }
+    .btn-warning:hover{
+        background-color: white;
+        color: $color-principal;
+    }
     .btn-br {
         border-radius: 0px;
     }
@@ -53,6 +61,59 @@ header{
             margin: 0 10px;
             padding-top: 10px;
         }
+    }
+    .carousel-efecto{
+        img{
+            opacity: 0.75;
+        }
+    }
+}
+
+// Cards nuevas
+.container-tarjeta{
+    padding: 0 0.2rem;
+    margin: 0.1rem 0.3rem;
+
+    img{
+        display: block;
+        filter:grayscale(50%);
+        width: 100%;
+        max-width: 100%;
+        border-bottom-left-radius: 0.7rem;border-bottom-right-radius: 0.7rem;
+    }
+    .tarjeta-section{
+        display: grid;
+        gap: 0.2rem;
+        /* grid-template-rows: 28rem; */
+       grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+       grid-template-rows: repeat(auto-fill, 1fr);
+    }
+    
+    .tarjeta{
+        background-color: $color-secundario;
+        border-radius: 0.7rem;
+        padding: 0.1rem;
+    }
+    
+    .tarjeta:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        img{
+            filter:grayscale(0%);
+        }
+    }
+    .tarjeta-body p{
+        text-align: justify;
+        padding: 0 0.2rem;
+        max-width: 100%;
+    }
+    .tarjeta-header{
+        background-color: $color-principal;
+        padding: 1.5rem;
+        color: $color-secundario;
+        text-align: center;
+        border-top-left-radius: 0.7rem;
+        border-top-right-radius: 0.7rem;
     }
 }
 

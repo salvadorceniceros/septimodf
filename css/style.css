@@ -32,6 +32,14 @@ header .btn-rojo {
   background-color: #2d0a79;
   border-color: #2d0a79; }
 
+header .btn-warning {
+  background-color: #2d0a79;
+  color: white; }
+
+header .btn-warning:hover {
+  background-color: white;
+  color: #2d0a79; }
+
 header .btn-br {
   border-radius: 0px; }
 
@@ -45,6 +53,46 @@ header main p {
   text-align: justify;
   margin: 0 10px;
   padding-top: 10px; }
+
+header .carousel-efecto img {
+  opacity: 0.75; }
+
+.container-tarjeta {
+  padding: 0 0.2rem;
+  margin: 0.1rem 0.3rem; }
+  .container-tarjeta img {
+    display: block;
+    filter: grayscale(50%);
+    width: 100%;
+    max-width: 100%;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem; }
+  .container-tarjeta .tarjeta-section {
+    display: grid;
+    gap: 0.2rem;
+    /* grid-template-rows: 28rem; */
+    grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+    grid-template-rows: repeat(auto-fill, 1fr); }
+  .container-tarjeta .tarjeta {
+    background-color: #ffff;
+    border-radius: 0.7rem;
+    padding: 0.1rem; }
+  .container-tarjeta .tarjeta:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+    .container-tarjeta .tarjeta:hover img {
+      filter: grayscale(0%); }
+  .container-tarjeta .tarjeta-body p {
+    text-align: justify;
+    padding: 0 0.2rem;
+    max-width: 100%; }
+  .container-tarjeta .tarjeta-header {
+    background-color: #2d0a79;
+    padding: 1.5rem;
+    color: #ffff;
+    text-align: center;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem; }
 
 .form-registro {
   width: 400px;
