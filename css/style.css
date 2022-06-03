@@ -62,7 +62,7 @@ header .carousel-efecto img {
   margin: 0.1rem 0.3rem; }
   .container-tarjeta img {
     display: block;
-    filter: grayscale(50%);
+    filter: grayscale(45%);
     width: 100%;
     max-width: 100%;
     border-bottom-left-radius: 0.7rem;
